@@ -1,0 +1,25 @@
+# scenario-3.yaml - Asymmetric load
+schema_version: 1
+
+extends: world.yaml
+
+id: scenario-3
+name: "Asymmetric load"
+description: "10 BK buses (15 min spacing), only 4 KB buses."
+
+fleet:
+  - { id: bus-BK-01, operator: kpn, direction: BK, depart: "19:00" }
+  - { id: bus-BK-02, operator: freshbus, direction: BK, depart: "19:15" }
+  - { id: bus-BK-03, operator: flixbus, direction: BK, depart: "19:30" }
+  - { id: bus-BK-04, operator: kpn, direction: BK, depart: "19:45" }
+  - { id: bus-BK-05, operator: freshbus, direction: BK, depart: "20:00" }
+  - { id: bus-BK-06, operator: flixbus, direction: BK, depart: "20:15" }
+  - { id: bus-BK-07, operator: kpn, direction: BK, depart: "20:30" }
+  - { id: bus-BK-08, operator: freshbus, direction: BK, depart: "20:45" }
+  - { id: bus-BK-09, operator: flixbus, direction: BK, depart: "21:00" }
+  - { id: bus-BK-10, operator: kpn, direction: BK, depart: "21:15" }
+
+  - { id: bus-KB-01, operator: freshbus, direction: KB, depart: "19:00" }
+  - { id: bus-KB-02, operator: flixbus, direction: KB, depart: "19:35" }
+  - { id: bus-KB-03, operator: kpn, direction: KB, depart: "20:10" }
+  - { id: bus-KB-04, operator: freshbus, direction: KB, depart: "20:45" }
