@@ -1,0 +1,36 @@
+# scenario-4.yaml - Operator-heavy
+schema_version: 1
+
+extends: world.yaml
+
+id: scenario-4
+name: "Operator-heavy"
+description: "KPN dominates BK (8 of 10). Operator weight raised to 2.0."
+
+weights:
+  individual: 1.0
+  operator: 2.0
+  overall: 1.0
+
+fleet:
+  - { id: bus-BK-01, operator: kpn, direction: BK, depart: "19:00" }
+  - { id: bus-BK-02, operator: kpn, direction: BK, depart: "19:15" }
+  - { id: bus-BK-03, operator: kpn, direction: BK, depart: "19:30" }
+  - { id: bus-BK-04, operator: kpn, direction: BK, depart: "19:45" }
+  - { id: bus-BK-05, operator: kpn, direction: BK, depart: "20:00" }
+  - { id: bus-BK-06, operator: kpn, direction: BK, depart: "20:15" }
+  - { id: bus-BK-07, operator: kpn, direction: BK, depart: "20:30" }
+  - { id: bus-BK-08, operator: kpn, direction: BK, depart: "20:45" }
+  - { id: bus-BK-09, operator: freshbus, direction: BK, depart: "21:00" }
+  - { id: bus-BK-10, operator: flixbus, direction: BK, depart: "21:15" }
+
+  - { id: bus-KB-01, operator: freshbus, direction: KB, depart: "19:00" }
+  - { id: bus-KB-02, operator: flixbus, direction: KB, depart: "19:15" }
+  - { id: bus-KB-03, operator: kpn, direction: KB, depart: "19:30" }
+  - { id: bus-KB-04, operator: freshbus, direction: KB, depart: "19:45" }
+  - { id: bus-KB-05, operator: flixbus, direction: KB, depart: "20:00" }
+  - { id: bus-KB-06, operator: kpn, direction: KB, depart: "20:15" }
+  - { id: bus-KB-07, operator: freshbus, direction: KB, depart: "20:30" }
+  - { id: bus-KB-08, operator: flixbus, direction: KB, depart: "20:45" }
+  - { id: bus-KB-09, operator: kpn, direction: KB, depart: "21:00" }
+  - { id: bus-KB-10, operator: freshbus, direction: KB, depart: "21:15" }
