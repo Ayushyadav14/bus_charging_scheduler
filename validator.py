@@ -44,6 +44,10 @@ def verify(schedule, scenario) -> bool:
     rng = phys.battery_range_km
     stations = {n.id: n for n in route.nodes if n.is_station}
 
+    ids = [t.bus_id for t in schedule.timelines]
+    _require(len(ids) == len(scenario.fleet) and len(set(ids)) == len(ids),
+             "fleet mismatch: timelines do not match the scenario's buses one-to-one")
+
     pos = {d: route.dist_from_origin(d) for d in route.directions}
     length = {d: route.total_length(d) for d in route.directions}
 
