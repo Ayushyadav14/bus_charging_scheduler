@@ -1,0 +1,31 @@
+# scenario-2.yaml - Bunched start
+schema_version: 1
+
+extends: world.yaml
+
+id: scenario-2
+name: "Bunched start"
+description: "Both directions depart every 8 min over the first ~50 min, then space out."
+
+fleet:
+  - { id: bus-BK-01, operator: kpn, direction: BK, depart: "19:00" }
+  - { id: bus-BK-02, operator: freshbus, direction: BK, depart: "19:08" }
+  - { id: bus-BK-03, operator: flixbus, direction: BK, depart: "19:16" }
+  - { id: bus-BK-04, operator: kpn, direction: BK, depart: "19:24" }
+  - { id: bus-BK-05, operator: freshbus, direction: BK, depart: "19:32" }
+  - { id: bus-BK-06, operator: flixbus, direction: BK, depart: "19:40" }
+  - { id: bus-BK-07, operator: kpn, direction: BK, depart: "19:48" }
+  - { id: bus-BK-08, operator: freshbus, direction: BK, depart: "20:03" }
+  - { id: bus-BK-09, operator: flixbus, direction: BK, depart: "20:18" }
+  - { id: bus-BK-10, operator: kpn, direction: BK, depart: "20:33" }
+
+  - { id: bus-KB-01, operator: freshbus, direction: KB, depart: "19:00" }
+  - { id: bus-KB-02, operator: flixbus, direction: KB, depart: "19:08" }
+  - { id: bus-KB-03, operator: kpn, direction: KB, depart: "19:16" }
+  - { id: bus-KB-04, operator: freshbus, direction: KB, depart: "19:24" }
+  - { id: bus-KB-05, operator: flixbus, direction: KB, depart: "19:32" }
+  - { id: bus-KB-06, operator: kpn, direction: KB, depart: "19:40" }
+  - { id: bus-KB-07, operator: freshbus, direction: KB, depart: "19:48" }
+  - { id: bus-KB-08, operator: flixbus, direction: KB, depart: "20:03" }
+  - { id: bus-KB-09, operator: kpn, direction: KB, depart: "20:18" }
+  - { id: bus-KB-10, operator: freshbus, direction: KB, depart: "20:33" }
